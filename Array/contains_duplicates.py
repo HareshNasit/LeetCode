@@ -1,6 +1,6 @@
-#https://leetcode.com/problems/contains-duplicate/submissions/
 def containsDuplicate(self, nums):
         """
+        https://leetcode.com/problems/contains-duplicate/submissions/
         :type nums: List[int]
         :rtype: bool
         """
