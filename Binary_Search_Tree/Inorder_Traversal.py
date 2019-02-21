@@ -4,6 +4,7 @@ def inorderTraversal(self, root):
         :type root: TreeNode
         :rtype: List[int]
         """
+       
         if root == None:
             return []
         inorder = []
