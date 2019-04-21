@@ -16,24 +16,26 @@ class MinStack(object):
         """
         if len(self._lst) == 0:
             self.min.append(x)
-        elif x < self.min[-1]:
-            self.min.append(x)
         self._lst.append(x)
+        smallest = self.min[-1]
+        if x < smallest:
+            self.min.append(x)
+        else:
+            self.min.append(smallest)
         
 
     def pop(self):
         """
         :rtype: None
         """
-        popped = self._lst.pop()
-        if self.min[-1] == popped:
-            self.min.pop()
+        self._lst.pop()
+        self.min.pop()
 
     def top(self):
         """
         :rtype: int
         """
-        return self._lst[len(self._lst) - 1]
+        return self._lst[-1]
 
     def getMin(self):
         """
