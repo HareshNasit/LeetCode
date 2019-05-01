@@ -14,3 +14,5 @@ def findDuplicate(self, nums):
             if nums_dict[i] == 2:
                 return i
         return 0
+
+        #OR USE A SET TO CHECK IF A GIVEN ELEMENT IS IN IT. RUNTIME IS O(n).
