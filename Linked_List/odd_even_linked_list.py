@@ -12,6 +12,8 @@ def oddEvenList(self, head):
         even_lst = ListNode(0)
         even_curr = even_lst
         last_node = None
+
+        
         while curr != None:
             if count % 2 == 0:
                 even_curr.next = curr
