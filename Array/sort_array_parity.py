@@ -1,5 +1,6 @@
 def sortArrayByParity(self, A):
         """
+        https://leetcode.com/problems/sort-array-by-parity/
         :type A: List[int]
         :rtype: List[int]
         """
@@ -12,7 +13,6 @@ def sortArrayByParity(self, A):
                 even_index += 1
         print A
         return A
-
         #Brute Force
         # odd = []
         # even = []
