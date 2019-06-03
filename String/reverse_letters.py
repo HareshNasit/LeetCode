@@ -6,7 +6,6 @@
         """
         str_lst = [i for i in S if i.isalpha()]
         output_str = [] 
-        print str_lst
         for letter in S:
             if letter.isalpha():
                 output_str.append(str_lst.pop())
