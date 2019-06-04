@@ -5,6 +5,7 @@ def removeNthFromEnd(self, head, n):
         :type n: int
         :rtype: ListNode
         """
+        #Runtime O(N)
         list_nodes = []
         curr = head
         length = 0
@@ -13,7 +14,7 @@ def removeNthFromEnd(self, head, n):
             curr = curr.next
             length += 1
         if n == length:
-            head = head.next 
+            head = head.next
             return head
         elif n == 0:
             list_nodes[length - 2].next = None
@@ -21,5 +22,5 @@ def removeNthFromEnd(self, head, n):
         prev_node = list_nodes[length - n - 1]
         deleted_node = list_nodes[length - n]
         prev_node.next = deleted_node.next
-        
+
         return head
