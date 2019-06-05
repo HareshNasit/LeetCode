@@ -5,6 +5,7 @@ def topKFrequent(self, nums, k):
         :type k: int
         :rtype: List[int]
         """
+        # Runtime O(N)
         nums_dict = {}
         nums_heap = []
         for i in nums:
