@@ -5,6 +5,7 @@
         :rtype: str
         """
         #Idea: Traverse through all the strings, find the intersection one by one.
+        #Runtime O(N)
         if len(strs) == 0:
             return ""
         lcf = strs[0]
