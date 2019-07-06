@@ -1,5 +1,6 @@
-def wordPattern(self, pattern, str):
+ def wordPattern(self, pattern, str):
         """
+        https://leetcode.com/problems/word-pattern/
         :type pattern: str
         :type str: str
         :rtype: bool
@@ -7,12 +8,18 @@ def wordPattern(self, pattern, str):
         split_str = str.split(" ")
         count = {}
         index = 0
+        words_set = []
         if len(pattern) != len(split_str):
             return False
-        for word in split_str:
-            if word not in count:
-                count[word] = pattern[index]
-            elif count[word] != pattern[index]:
+        for letter in pattern:
+            print letter
+            if letter not in count:
+                if split_str[index] not in words_set:
+                    count[letter] = split_str[index]
+                    words_set.append(split_str[index])
+                else:
+                    return False
+            elif count[letter] != split_str[index]:
                 return False
             index += 1
         return True
