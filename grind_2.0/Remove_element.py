@@ -2,6 +2,7 @@ class Solution:
     # https://leetcode.com/problems/remove-element/submissions/
     def removeElement(self, nums: List[int], val: int) -> int:
         # Runtime: O(N), Space Complexity: O(1)
+        # USE POINTERS FOR IN PLACE QUESTIONS
         pointer = 0
         for i in range(len(nums)):
             if nums[i] != val:
