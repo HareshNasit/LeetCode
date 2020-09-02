@@ -1,4 +1,5 @@
 class Solution:
+    # https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         # Runtime: O(logN), Space: O(1)
         # Left index
